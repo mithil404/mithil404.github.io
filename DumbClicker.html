@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        body {
+        font-size: 60px;
+        height: 99%;
+        width: 99%;
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+}
+button{
+    font-family: "Bahnschrift";
+    font-size: 40px;
+}
+.main{
+    color: rgb(20, 19, 24);
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    width: 50%;
+    height: 50%;
+    border: 5px;
+    border-color:darkolivegreen;
+    border-style: solid;
+    border-radius: 0.5em;
+    padding: 1em;
+    
+}
+    </style>
+<head>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8" />
+    <title>First JS</title>
+</head>
+<body>
+    <script defer src="./first.js"></script>
+    <div class="main" style="font-family: 'Space Mono', monospace;">
+        <div>
+            <p style="float: left;">Click Count🔞:</p>
+            <p style="float: left; outline-style: solid;  outline-width: 2px; width: fit-content; padding-left: 10px; padding-right: 10px; outline-color: #2d540a; border-radius: 2px; background-color: #e4f8d2; color:rgb(39, 78, 0);" id="smthg">0</p>   
+        </div>
+        <br><br><br>
+        <div style="display:flex; align-items: center; justify-content: center;">
+            <button style="margin-right: 1em;" onclick="inc()">Smash 🐳</button>
+            <button style="margin-right: 1em;" onclick="reset()">Reset 💀</button>
+        </div>
+</div>
+</body>
+</html>
