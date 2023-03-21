@@ -2,20 +2,32 @@
 <html>
     <style>
         body {
-        font-size: 3vw;
-        height: 99%;
-        width: 99%;
-        position: absolute;
+        font-size: 5vw;
+        height: 90%;
+        width: 90%;
+        margin-left: 5%;
+        margin-top: 2.5%;
+        position:absolute;
         display: flex;
         align-items: center;
         justify-content: center;
+        background-color: #FBF0D9;
 }
 button{
     font-family: "Bahnschrift";
-    font-size: 2vw;
+    font-size: 3vw;
+    background-color: #70391467;
+    border-radius: 0.1em;
+    margin-bottom: 10px;
+    transition: all 0.5s linear;
+}
+button:hover{
+    border-width: .1em;
+    transition:ease 0.05s;
+    background-color: #e4f8d2;
 }
 .main{
-    color: rgb(20, 19, 24);
+    color: #3f2b0a;
     -webkit-touch-callout: none;
     -webkit-user-select: none;
     -khtml-user-select: none;
@@ -24,25 +36,26 @@ button{
     user-select: none;
     width: auto;
     height: auto;
-    border: 5px;
-    border-color:darkolivegreen;
+    border: 0.1em;
+    border-color:#5F4B32;
     border-style: solid;
     border-radius: 0.5em;
-    padding: 1em;
-    
+    padding: 0.3em;
+    transition: all 0.5s linear;
+    font-family: 'Space Mono', monospace;
 }
     </style>
 <head>
-    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap" rel="stylesheet">
-    <meta charset="UTF-8" />
     <title>First JS</title>
 </head>
 <body>
     <script defer src="./first.js"></script>
-    <div class="main" style="font-family: 'Space Mono', monospace;">
+    <div class="main">
         <div>
             <p style="float: left;">Click Count🔞:</p>
             <p style="float: left; outline-style: solid;  outline-width: 2px; width: fit-content; padding-left: 10px; padding-right: 10px; outline-color: #2d540a; border-radius: 2px; background-color: #e4f8d2; color:rgb(39, 78, 0);" id="smthg">0</p>   
