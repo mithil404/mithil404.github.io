@@ -1,67 +1,15 @@
 <!DOCTYPE html>
 <html>
-    <style>
-        body {
-        font-size: 6vw;
-        height: 90%;
-        width: 90%;
-        margin-left: 5%;
-        margin-top: 2.5%;
-        position:absolute;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background-color: #FBF0D9;
-}
-button{
-    font-family: "Bahnschrift";
-    border-width: 1px;
-    border-style: none;
-    font-size: 4vw;
-    background-color: #70391467;
-    border-radius: 0.1em;
-    margin-bottom: 10px;
-    transition: all 0.5s linear;
-    cursor: pointer;
-}
-button:hover{
-    transition:ease 0.05s;
-    border-style: none;
-    border-radius: 0.1em;
-    box-shadow: 0 0px 10px #9ecaed;
-    /* background-color: #709e6a7c; */
-}
-button:active{
-    background-color: #e4f8d2;
-    outline: none;
-    box-shadow: 0 0 10px #4795d4;
-}
-.main{
-    color: #3f2b0a;
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    width: auto;
-    height: auto;
-    border: 0.1em;
-    border-color:#493926;
-    border-style: solid;
-    border-radius: 0.5em;
-    padding: 0.3em;
-    transition: all 0.5s linear;
-    font-family: 'Space Mono', monospace;
-}
-    </style>
 <head>
     <meta charset="UTF-8">
+    <link rel="preload" href="Mona-Sans.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="./DumbClicker.css">
+    <link rel="icon" type="image/x-icon" href="./favicon.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap" rel="stylesheet">
-    <title>First JS</title>
+    <title>Dumb Clicker</title>
 </head>
 <body>
     <script defer src="./first.js"></script>
@@ -70,9 +18,9 @@ button:active{
             <p style="float: left;">Click Count🔞:</p>
             <p style="float: left; outline-style: solid;  outline-width: 2px; width: fit-content; padding-left: 10px; padding-right: 10px; outline-color: #2d540a; border-radius: 2px; background-color: #e4f8d2; color:rgb(39, 78, 0);" id="smthg">0</p>   
         </div>
-        <div style="display:flex; align-items: center; justify-content: center; clear: both;">
-            <button style="margin-right: 1em;" onclick="inc()">Smash 🐳</button>
-            <button style="margin-right: 1em;" onclick="reset()">Reset 💀</button>
+        <div style="display:grid; clear: both; grid-template-columns: auto auto; column-gap: 0.5em; padding-left: 0.2em; padding-right: 0.2em;">
+            <button onclick="inc()">Smash 🐳</button>
+            <button onclick="reset()">Reset 💀</button>
         </div>
 </div>
 </body>
